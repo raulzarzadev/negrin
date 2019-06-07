@@ -1,0 +1,153 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 30px;
+}
+p{
+    font-size: 30px;
+}
+/* ---HEADER--- */
+
+.header{
+    background-color: aqua;
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-areas: 
+    "header-logo header-buscar header-menu"
+}
+
+.header-logo{
+    grid-area: header-logo;
+}
+.header-buscar{
+    grid-area: header-buscar;
+}
+.header-menu{
+    grid-area: header-menu;
+    display: flex;
+    background: aqua;
+    text-decoration: none;
+    list-style: none;
+    width: 200px;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0;
+}
+
+/* ---CONTAINER--- */
+
+.container{
+    background-image: url('../images/tienda.jpg');
+    background-size: cover;
+    background-position-y: -100px;
+    
+    height: 1200px;
+    margin: 0 100px;
+    background-color: aliceblue;
+    display: grid;
+    padding: 20px;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "hero         hero         hero"
+    "busca-face   busca-face   promos"
+    "busca-google busca-google promos"
+    "contacto     contacto     promos"
+    "nosotros     nosotros     nosotros ";
+}
+.hero{
+    padding: 20px;
+    grid-area: hero;
+    text-align: end;
+    background: rgba(28,28,28,0);
+    background: -moz-linear-gradient(left, rgba(28,28,28,0) 0%, rgba(43,43,43,0) 0%, rgba(19,19,19,0) 0%, rgba(90,90,90,0) 30%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(28,28,28,0)), color-stop(0%, rgba(43,43,43,0)), color-stop(0%, rgba(19,19,19,0)), color-stop(30%, rgba(90,90,90,0)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(left, rgba(28,28,28,0) 0%, rgba(43,43,43,0) 0%, rgba(19,19,19,0) 0%, rgba(90,90,90,0) 30%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(28,28,28,0) 0%, rgba(43,43,43,0) 0%, rgba(19,19,19,0) 0%, rgba(90,90,90,0) 30%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(left, rgba(28,28,28,0) 0%, rgba(43,43,43,0) 0%, rgba(19,19,19,0) 0%, rgba(90,90,90,0) 30%, rgba(255,255,255,1) 100%);
+}
+
+.titulo{
+    display: none;
+    /* grid-area: titulo; */
+    background-color:none;
+    
+}
+.busca-face{
+    grid-area: busca-face;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+.busca-google{
+    grid-area: busca-google;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.promos{
+    grid-area: promos;
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+}
+.contacto{
+    grid-area: contacto;
+    background-color: #fff;
+}
+.nosotros{
+    grid-area: nosotros;
+    background-color: #fff;
+}
+/* ---FOOTER--- */
+
+
+.footer{
+    height: 300px;
+    width: 100%;
+    background: aqua;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-areas: 
+    "footer-logo footer-contacto footer-terminos "
+    " .          footer-creditos ."
+}
+.footer-logo{
+    grid-area: footer-logo;
+}
+.footer-creditos{
+    grid-area: footer-creditos;
+}
+.footer-terminos{
+    grid-area: footer-terminos;
+}
+.footer-contacto{
+    grid-area: footer-contacto;
+    display: flex;
+    grid-area: footer-contacto;
+    list-style: none;
+    width: 500px;
+    background: aliceblue;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+

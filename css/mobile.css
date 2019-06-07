@@ -1,0 +1,50 @@
+@media only screen and (max-width: 375px) {
+
+    h1{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .header-buscar{
+        display: none
+    }
+    .header-menu{
+        width: 150px;
+    }
+    .promos{
+        display: flex;
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+        
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+        grid-template-areas: 
+
+        "hero       hero"
+        "busca-face busca-google"
+        "promos     promos"
+        "contacto   contacto"
+        "nosotros   nosotros";
+    }
+    .logo{
+        width: 10px;
+    }
+    footer{
+        grid-template-areas: 
+        "footer-logo     "
+        "footer-contacto "
+        "footer-terminos "
+        "footer-creditos "
+    }
+    .footer-contacto{
+        display: none;
+    }
+
+  }

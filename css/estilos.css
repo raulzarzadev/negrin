@@ -20,7 +20,7 @@ p{
     width: 100%;
     padding: 10px;
     display: grid;
-    justify-items: center;
+    justify-content: space-between;
     align-content: center;
     grid-template-areas: 
     "header-logo header-buscar header-menu"
@@ -42,6 +42,12 @@ p{
     justify-content: space-around;
     padding: 0px;
     margin: 0;
+}
+.logo-negrin{
+    width: 500px;
+}
+.logo-negrin-2{
+    width: 200px;
 }
 
 /* ---CONTAINER--- */
@@ -117,7 +123,7 @@ p{
 
 
 .footer{
-    height: 300px;
+    /* height: 300px; */
     width: 100%;
     background: aqua;
     width: 100%;
@@ -126,8 +132,9 @@ p{
     justify-items: center;
     align-content: center;
     grid-template-areas: 
-    "footer-logo footer-contacto footer-terminos "
-    " .          footer-creditos ."
+    ".            footer-contacto ."
+    "footer-logo .                footer-terminos "
+    " .          footer-creditos  ."
 }
 .footer-logo{
     grid-area: footer-logo;

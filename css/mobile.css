@@ -1,66 +1,72 @@
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 200px) {
+
+    
+    body{
+        background: blue;
+    }
 
     h1{
-        font-size: 20px;
+        font-size: 30px;
     }
     h3{
-        font-size: 15px;
+        font-size: 25px
     }
     p{
-        font-size: 10px;
+        font-size: 20px
     }
+
+    /* header */
     .header{
-        margin: 0;
-        padding: 10px;
-        grid-template-areas: 
-        "header-logo header-logo header-menu"
+    padding: 10px;
+    display: inline;
+    text-align: center;
     }
+
     .logo-negrin{
-        width: 150px
+    width: 90%;
+    }
+    
+    .header-menu{
+        margin: 0 auto;
+    
     }
     .header-buscar{
-        display: none
+        display: none;
     }
-    .header-menu{  
-        width: 150px;
-        display: block;
-    }
-    .promos{
-        display: flex;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        
-    }
-    .container{
-        margin: 0;
-        padding: 0;
-        grid-template-areas: 
 
-        "hero       hero"
-        "busca-face busca-google"
-        "promos     promos"
-        "contacto   contacto"
-        "nosotros   nosotros";
+    /* container */
+
+
+    .container{
+        width: 100%;
+        height: inherit;
+        margin: 0;
+        padding: 0;
+        display: inline;
+    }
+    .busca-face{
+        width: 90%;
+        margin: 0 auto;
+        display: inline;
+    }
+    .busca-google{
+        display: inline;
     }
     .logo{
-        width: 10px;
+        width: 50px;
+    }
+    .promos{
+        padding: 0;
+        margin: 0 auto;
+        width: auto;
     }
 
-    .logo-negrin-2{
-        display: none;
-    }
+    /* footer */
+
     .footer{
-        padding: 0;
-        margin: 0;
-        grid-template-areas: 
-        "footer-logo     "
-        "footer-contacto "
-        "footer-terminos "
-        "footer-creditos "
+        display: inline;
     }
     .footer-contacto{
-        display: none;
+        display: inline;
     }
-
-  }
+}

@@ -28,6 +28,7 @@ p{
 
 .header-logo{
     grid-area: header-logo;
+    background: lightblue;
 }
 .header-buscar{
     grid-area: header-buscar;
@@ -35,7 +36,7 @@ p{
 .header-menu{
     grid-area: header-menu;
     display: flex;
-    background: aqua;
+    
     text-decoration: none;
     list-style: none;
     width: 200px;

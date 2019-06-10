@@ -1,15 +1,15 @@
-@media only screen and (min-width: 200px) {
+@media only screen and (max-width: 350px) {
 
     
     body{
-        background: blue;
+        background:;
     }
 
     h1{
-        font-size: 30px;
+        font-size: 25px;
     }
     h3{
-        font-size: 25px
+        font-size: 20px
     }
     p{
         font-size: 20px
@@ -17,9 +17,10 @@
 
     /* header */
     .header{
-    padding: 10px;
+    padding: 0;
     display: inline;
     text-align: center;
+    background-color: bisque;
     }
 
     .logo-negrin{
@@ -42,19 +43,45 @@
         height: inherit;
         margin: 0;
         padding: 0;
-        display: inline;
+        
+        background: transparent;
+        grid-template-areas: 
+        "hero         "
+        "busca-face   "
+        "busca-google "
+        "contacto"
+        "promos"
+        "nosotros "
+    }
+    .hero{
+        padding: 5px;
+        background-image: url('../images/tienda.jpg');
+        color: #ffffff;
     }
     .busca-face{
-        width: 90%;
+        
         margin: 0 auto;
-        display: inline;
+        
+        text-align: center;
     }
     .busca-google{
+        
+        text-align: center;
+    }
+    .contacto{
         display: inline;
+        text-align: center;
     }
     .logo{
-        width: 50px;
+        width: 80px;
     }
+    .logo.pulgar{
+        display: none
+    }
+    .logo.google{
+        display: none;
+    }
+    
     .promos{
         padding: 0;
         margin: 0 auto;
@@ -65,6 +92,10 @@
 
     .footer{
         display: inline;
+        text-align: center;
+    }
+    .logo-negrin-2{
+        width: 80px;
     }
     .footer-contacto{
         display: inline;

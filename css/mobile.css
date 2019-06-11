@@ -43,8 +43,8 @@
         height: inherit;
         margin: 0;
         padding: 0;
-        
-        background: transparent;
+        background-position-y: -155px;
+       
         grid-template-areas: 
         "hero         "
         "busca-face   "
@@ -55,21 +55,19 @@
     }
     .hero{
         padding: 5px;
-        background-image: url('../images/tienda.jpg');
-        color: #ffffff;
     }
     .busca-face{
         
         margin: 0 auto;
-        
+        padding: 0;
         text-align: center;
     }
     .busca-google{
-        
+        padding: 0;
         text-align: center;
     }
     .contacto{
-        display: inline;
+        padding: 0;
         text-align: center;
     }
     .logo{
@@ -79,6 +77,9 @@
         display: none
     }
     .logo.google{
+        display: none;
+    }
+    .logo.correo{
         display: none;
     }
     
@@ -91,13 +92,18 @@
     /* footer */
 
     .footer{
-        display: inline;
-        text-align: center;
+        padding: 0;
+        grid-template-areas: 
+        "footer-contacto"
+        "footer-logo" 
+        "footer-terminos "
+        "footer-creditos"
     }
     .logo-negrin-2{
         width: 80px;
     }
     .footer-contacto{
+        width: auto;
         display: inline;
     }
 }

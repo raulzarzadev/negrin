@@ -1,3 +1,12 @@
+/* 
+#f1592a
+#3f2820
+#e5a6cb
+#f27732
+*/
+
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -15,6 +24,7 @@ p{
 /* ---HEADER--- */
 
 .header{
+    
     background-color: aqua;
     height: 200px;
     width: 100%;
@@ -43,6 +53,8 @@ p{
     justify-content: space-around;
     padding: 0px;
     margin: 0;
+
+    
 }
 .logo{
     width: 80px;
@@ -59,7 +71,7 @@ p{
 .container{
     background-image: url('../images/tienda.jpg');
     background-size: cover;
-    background-position-y: -100px;
+    background-position-y: -100px;      
     margin: 0 100px;
     background-color: aliceblue;
     display: grid;

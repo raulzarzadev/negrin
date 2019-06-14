@@ -4,8 +4,12 @@
 #e5a6cb
 #f27732
 */
-
-
+:root{
+    --rosa: #e5a6cb;
+    --cafe-claro: #f1592a;
+    --cafe-fuerte: #3f2820;
+    --carne:#f27732;
+  }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -21,11 +25,15 @@ h2{
 p{
     font-size: 30px;
 }
+a{
+    color:#3f2820; 
+}
+
 /* ---HEADER--- */
 
 .header{
+    background-color:var(--carne);
     
-    background-color: aqua;
     height: 200px;
     width: 100%;
     padding: 10px;
@@ -38,23 +46,26 @@ p{
 
 .header-logo{
     grid-area: header-logo;
-    background: lightblue;
+    
 }
 .header-buscar{
+    align-self: center;
     grid-area: header-buscar;
+    display: grid;
 }
 .header-menu{
     grid-area: header-menu;
     display: flex;
-    
+    align-self: center;
     text-decoration: none;
     list-style: none;
-    width: 200px;
+    width: 400px;
     justify-content: space-around;
     padding: 0px;
-    margin: 0;
-
-    
+    margin: 0;  
+}
+.header-menu a{
+    font-size: 40px;
 }
 .logo{
     width: 80px;
@@ -73,7 +84,7 @@ p{
     background-size: cover;
     background-position-y: -100px;      
     margin: 0 100px;
-    background-color: aliceblue;
+    background-color: ;
     display: grid;
     padding: 20px;
     grid-gap: 20px;
@@ -88,6 +99,7 @@ p{
     padding: 20px;
     grid-area: hero;
     text-align: end;
+    color: var(--cafe-fuerte);
     background: rgba(28,28,28,0);
     background: -moz-linear-gradient(left, rgba(28,28,28,0) 0%, rgba(43,43,43,0) 0%, rgba(19,19,19,0) 0%, rgba(90,90,90,0) 30%, rgba(255,255,255,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(28,28,28,0)), color-stop(0%, rgba(43,43,43,0)), color-stop(0%, rgba(19,19,19,0)), color-stop(30%, rgba(90,90,90,0)), color-stop(100%, rgba(255,255,255,1)));
@@ -99,23 +111,25 @@ p{
 .titulo{
     display: none;
     /* grid-area: titulo; */
-    background-color:none;
+    
     
 }
 .busca-face{
     grid-area: busca-face;
-    background-color: #fff;
+    background-color: var(--rosa);
     padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     
 }
 .busca-google{
     grid-area: busca-google;
-    background-color: #fff;
+    background-color:var(--rosa);
     padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .promos{
     grid-area: promos;
@@ -126,25 +140,31 @@ p{
     grid-gap: 20px;
 }
 .promo{
-    background-color: #fff;
+    background-color:var(--rosa) ;
+    padding: 10px;
 }
 .contacto{
     grid-area: contacto;
-    background-color: #fff;
+    background-color: var(--rosa);
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .nosotros{
     grid-area: nosotros;
-    background-color: #fff;
+    display: grid;
+    grid-gap: 10px;
+    background-color:var(--rosa);
+    padding: 20px;
 }
+
 /* ---FOOTER--- */
 
 
 .footer{
     /* height: 300px; */
     width: 100%;
-    background: aqua;
+    background: var(--carne);
     width: 100%;
     padding: 10px;
     display: grid;
@@ -170,7 +190,7 @@ p{
     grid-area: footer-contacto;
     list-style: none;
     
-    background: aliceblue;
+    background: ;
     margin: 0;
     padding: 10px;
     text-align: center;

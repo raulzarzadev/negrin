@@ -163,9 +163,9 @@
        
         grid-template-areas: 
         "hero         "
-        "busca-face   "
-        "busca-google "
         "contacto"
+        "busca-google "
+        "busca-face   "
         "promos"
         "nosotros "
     }

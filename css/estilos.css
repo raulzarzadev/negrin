@@ -15,6 +15,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background: var(--rosa)
 }
 h1{
     font-size: 60px;
@@ -34,7 +35,7 @@ a{
 .header{
     background-color:var(--carne);
     
-    height: 200px;
+    height: 150px;
     width: 100%;
     padding: 10px;
     display: grid;
@@ -52,6 +53,7 @@ a{
     align-self: center;
     grid-area: header-buscar;
     display: grid;
+    display: none;
 }
 .header-menu{
     grid-area: header-menu;
@@ -65,7 +67,12 @@ a{
     margin: 0;  
 }
 .header-menu a{
+    
     font-size: 40px;
+    text-decoration: none;
+    background: var(--rosa);
+    padding: 10px;
+    border-radius: 5px;
 }
 .logo{
     width: 80px;
@@ -80,7 +87,7 @@ a{
 /* ---CONTAINER--- */
 
 .container{
-    background-image: url('../images/tienda.jpg');
+    /* background-image: url('../images/tienda.jpg'); */
     background-size: cover;
     background-position-y: -100px;      
     margin: 0 100px;
@@ -90,9 +97,9 @@ a{
     grid-gap: 20px;
     grid-template-areas: 
     "hero         hero         hero"
-    "busca-face   busca-face   promos"
-    "busca-google busca-google promos"
-    "contacto     contacto     promos"
+    "enlaces      enlaces      promos"
+    "enlaces      enlaces      promos"
+    "enlaces      enlaces      promos"
     "nosotros     nosotros     nosotros ";
 }
 .hero{
@@ -114,23 +121,28 @@ a{
     
     
 }
-.busca-face{
-    grid-area: busca-face;
-    background-color: var(--rosa);
-    padding: 20px;
+.enlaces{
+    grid-area: enlaces;
+
+}
+.enlace{ 
+    margin: 20px;
+    background-color: var(--carne);
+    padding: 5px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: center; 
+    width: 900px;
+    border-radius: 5px;
 }
-.busca-google{
-    grid-area: busca-google;
-    background-color:var(--rosa);
-    padding: 20px;
+.enlace a{
     display: flex;
-    align-items: center;
+    height: 200px;
+    width: inherit;
     justify-content: space-between;
+    text-decoration: none;
 }
+
 .promos{
     grid-area: promos;
     
@@ -142,13 +154,6 @@ a{
 .promo{
     background-color:var(--rosa) ;
     padding: 10px;
-}
-.contacto{
-    grid-area: contacto;
-    background-color: var(--rosa);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 .nosotros{
     grid-area: nosotros;

@@ -51,9 +51,7 @@
        
         grid-template-areas: 
         "hero         "
-        "busca-face   "
-        "busca-google "
-        "contacto"
+        "enlaces"
         "promos"
         "nosotros "
     }
@@ -74,17 +72,10 @@
         text-align: center;
     }
     .logo{
-        width: 80px;
+        width: 80px; 
+        align-self: center;
     }
-    .logo.pulgar{
-        display: none
-    }
-    .logo.google{
-        display: none;
-    }
-    .logo.correo{
-        display: none;
-    }
+    
     
     .promos{
         padding: 0;
@@ -162,28 +153,29 @@
         background-position-y: -155px;
        
         grid-template-areas: 
-        "hero         "
-        "contacto"
-        "busca-google "
-        "busca-face   "
-        "promos"
-        "nosotros "
+        "hero       "
+        "enlaces    "
+        "promos     "
+        "nosotros   "
     }
     .hero{
         padding: 5px;
     }
-    .busca-face{
-        padding: 0;
+    .enlace{
+        width: auto;
+        display: block;
         text-align: center;
     }
-    .busca-google{
-        padding: 0;
-        text-align: center;
+    .enlace.general{
+        display: flex;
+        flex-wrap: wrap;
     }
-    .contacto{
-        padding: 0;
-        text-align: center;
+    .enlace a{
+        height: auto;
+        display: block;
     }
+    
+    
     .logo{
         width: 120px;
     }

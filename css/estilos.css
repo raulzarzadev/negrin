@@ -93,7 +93,7 @@ a{
     background-size: cover;
     background-position-y: -100px;      
     margin: 0 100px;
-    background-color: ;
+    background-color: none;
     display: grid;
     padding: 20px;
     grid-gap: 20px;
@@ -200,7 +200,7 @@ a{
     grid-area: footer-contacto;
     list-style: none;
     
-    background: ;
+    background: none ;
     margin: 0;
     padding: 10px;
     text-align: center;

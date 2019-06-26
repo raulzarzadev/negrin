@@ -6,6 +6,7 @@
 
     h1{
         font-size: 25px;
+        margin: 0;
     }
     h3{
         font-size: 20px
@@ -63,8 +64,10 @@
         width: auto;
         display: block;
         text-align: center;
+        margin: 10px;
     }
     .enlace.general{
+        margin:20px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -72,6 +75,7 @@
         height: auto;
         display: block;
         margin: 5px;
+        display: inline-flex;
     }
     .logo{
         width: 80px; 

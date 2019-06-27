@@ -1,9 +1,4 @@
 @media only screen and (max-width: 350px) {
-
-    
-    body{
-    }
-
     h1{
         font-size: 25px;
         margin: 0;
@@ -110,10 +105,6 @@
 
 @media only screen and (max-width: 1024px) and (min-width:350px) {
 
-    
-    body{
-    
-    }
 
     h1{
         font-size: 40px;
@@ -232,10 +223,6 @@
     p{
         font-size: 30px
     }
-    .header{
-        
-    }
-
     .logo{
         width: 200px;
     }

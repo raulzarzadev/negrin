@@ -75,6 +75,7 @@
         margin: 5px;
         display: inline-flex;
     }
+    
     .logo{
         width: 80px; 
         align-self: center;
@@ -165,14 +166,18 @@
         width: auto;
         display: block;
         text-align: center;
+        margin: 10px;
     }
     .enlace.general{
+        margin:20px;
         display: flex;
         flex-wrap: wrap;
     }
     .enlace a{
         height: auto;
         display: block;
+        margin: 5px;
+        display: inline-flex;
     }
     
     

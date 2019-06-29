@@ -148,6 +148,30 @@ a{
     text-decoration: none;
 }
 
+/* ----productos---- */
+
+.enlace.producto {
+    text-align: center;
+    display: block;
+    height: auto;;
+}
+.producto a{
+    justify-content: center;
+    height: auto;
+}
+.producto img{
+    width: inherit;
+}
+
+.btn.product{
+    
+    width: auto;
+    height: 50px;
+}
+.btn p{
+    margin: 0;
+}
+
 .promos{
     grid-area: promos;
     

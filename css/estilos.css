@@ -160,7 +160,7 @@ a{
     height: auto;
 }
 .producto img{
-    width: inherit;
+    width: 90%;
 }
 
 .btn.product{

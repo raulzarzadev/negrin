@@ -164,8 +164,8 @@ a{
 }
 
 .btn.product{
-    
     width: auto;
+    height: 100px;
 }
 .btn p{
     margin: 0;
